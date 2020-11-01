@@ -9,7 +9,10 @@ uint32_t SystemCoreClock = 16000000; // Clock frequency is 16 MHz
 void Transmit_Task(void *pvParameters); 
 void Receive_Task(void *pvParameters);
 
+TaskHandle_t TXHandle = NULL;
+TaskHandle_t RXHandle = NULL; 
 QueueHandle_t QueueHandle = NULL; 
+
 int i = 1;
 
 int main()
