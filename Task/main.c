@@ -21,7 +21,7 @@ int main()
 
 void Task(void *pvParameters)
 {
-	const TickType_t xDelay = 16000 / configCPU_CLOCK_HZ;  // 1 ms delay 
+	const TickType_t xDelay = 100 / portTICK_PERIOD_MS;  // Block for 100 ms 
 	while(1)
 	{
 		  printf("Hey, what's up?");    
